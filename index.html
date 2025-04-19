@@ -16,6 +16,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      position: relative;
     }
 
     .top-menu {
@@ -23,7 +24,7 @@
       justify-content: center;
       gap: 50px;
       margin-bottom: auto;
-      margin-top: 100px;
+      margin-top: 200px; /* Increased to drop it a bit lower */
       flex-wrap: wrap;
       max-width: 1400px;
       text-align: center;
@@ -36,24 +37,38 @@
     .logo {
       position: absolute;
       top: 80px;
-      right: 160px;
+      right: 270px;
       display: flex;
       align-items: center;
       gap: 10px;
+      font-size: 22px;
+      font-weight: bold;
     }
 
     .logo img {
-      width: 24px;
-      height: 24px;
+      width: 25px;
+      height: 25px;
     }
+
+    .main-image {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    .main-image img {
+  margin-bottom: 100px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
     .footer {
       position: absolute;
       bottom: 60px;
       width: 100%;
       display: flex;
-      justify-content: space-between;
-      padding: 0 120px;
+      justify-content: center;
+      gap: 400px;  /* Adjust spacing between footer columns */
       font-size: 14px;
     }
 
@@ -62,12 +77,12 @@
     .footer .right {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 15px;
     }
 
     .footer img {
-      width: 18px;
-      height: 18px;
+      width: 25px;
+      height: 25px;
     }
 
     .footer .right {
@@ -94,6 +109,10 @@
     <div>큰 나무를<br>베라</div>
     <div>윤리와<br>예술의<br>경계에서</div>
     <div>제가<br>부모를<br>고소했어요</div>
+  </div>
+
+  <div class="main-image">
+    <img src="center.jpg" alt="중앙 이미지">
   </div>
 
   <div class="footer">
