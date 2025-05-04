@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자유를 갈망하는 외침</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 1920px;
+      height: 3000px;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Helvetica Neue', sans-serif;
+      box-sizing: border-box;
+      padding: 30px 250px;
+    }
+  
+    .container {
+      max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 80px;
+  position: relative;
+    }
+    .header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 36px;
+  font-weight: bold;
+  gap: 20px;
+}
+
+.logo {
+  width: 190px; /* 적절한 크기로 조정하세요 */
+  height: auto;
+}
+.main-image {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    .main-image img {
+  margin-bottom: 100px;
+  width: 1050px;
+  height: auto;
+  display: block;
+    }
+
+    .right-middle-image {
+  position: absolute;
+  right: -150px;   /* 오른쪽 여백 */
+  top: 1100px;     /* 화면 상단으로부터의 위치 (조절 가능) */
+}
+
+.right-middle-image img {
+  width: 360px;   /* 이미지 너비 (원하시면 더 크게/작게 조정) */
+  height: auto;
+  border-radius: 0px;
+}
+
+.bottom-image {
+  margin-top: 540px;  /* 이전 요소와의 간격 */
+  text-align: left; /* 가운데 정렬 */
+}
+
+.bottom-image img {
+  width: 920px;  /* 필요에 따라 크기 조절 */
+  height: auto;
+  border-radius: 0px; /* 선택사항: 둥글게 처리 */
+}
+
+
+.title-text {
+  text-align: right;
+}
+    .top-menu {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      margin-bottom: auto;
+      margin-top: 180px; /* Increased to drop it a bit lower */
+      flex-wrap: wrap;
+      max-width: 1400px;
+      text-align: center;
+    }
+    .tagline {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 70px;
+      margin-bottom: 90px;
+      font-size: 15px;
+      line-height: 1.4;
+      text-align: center;
+    }
+    .tagline div:first-child {
+      color: yellow;
+      font-weight: bold;
+    }
+    .info {
+      position: absolute;
+      right: -140px;
+      bottom: 17px;
+      width: 280px;
+      line-height: 1.7;
+    }
+    .info h2 {
+      font-size: 22px;
+      margin: 0 0 10px;
+    }
+    .info h3 {
+      font-size: 18px;
+      font-weight: normal;
+      margin: 0 0 20px;
+    }
+    .info p {
+      font-size: 15px;
+      margin: 0;
+    }
+    .quote {
+  position: absolute;
+  right: 920px; /* info와 정렬 맞춤 */
+  bottom: -370px;  /* info보다 아래쪽 위치 */
+  width: 280px;
+  color: #fff;
+  font-size: 17px;
+  line-height: 1.6;
+  text-align: center;
+  font-weight:800
+
+}
+.small-image {
+  position: absolute;
+  right: 850px;   /* 화면 오른쪽 여백 */
+  bottom: -580px;  /* 화면 하단 여백 */
+}
+
+.small-image img {
+  width: 420px;  /* 크기 조절 가능 */
+  height: auto;
+  border-radius: 0px; /* 둥근 모서리 (선택사항) */
+}
+
+.small-text {
+  position: absolute;
+  right: 850px;
+  bottom: -1100px;
+  width: 420px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #ccc;
+}
+
+.center-text {
+  margin: 50px auto -370px auto;
+  width: 400px;
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: justify;
+  color: #ccc;
+
+  transform: translateX(40px); /* 오른쪽으로 100px 이동 */
+}
+
+.bottom-right-text {
+  position: absolute;
+  right: -170px;
+  bottom: -1640px; /* 수직 위치 조정 */
+  width: 400px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #ccc;
+}
+
+.footer {
+  position: absolute;
+  bottom: -1750px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 350px;
+  font-size: 14px;
+  transform: translateX(-45px); /* 왼쪽으로 100px 이동 */
+}
+
+    .footer .left,
+    .footer .center,
+    .footer .right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .footer img {
+      width: 25px;
+      height: 25px;
+    }
+
+    .footer .right {
+      text-align: right;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="small-image">
+    <img src="slave-02.jpg" alt="이미지">
+  </div>
+
+  <div class="header">
+    <img src="logo-02.png" alt="로고" class="logo">
+
+    <div class="right-middle-image">
+      <img src="slave-03.jpg" alt="이미지">
+    </div>  
+
+    </div>
+  </div>
+  <div class="tagline">
+    <div>자유를<br>갈망하는<br>외침</div>
+    <div>내 돈은<br>내가<br>지키는 걸로</div>
+    <div>인류애에<br>대해 묻다</div>
+    <div>살아 있는<br>동안에<br>우리는</div>
+    <div>휴스턴,<br>여기 문제가<br>생겼다</div>
+    <div>쫓고 쫓기는<br>경찰과 도둑<br>게임</div>
+    <div>공항 67번<br>게이트에<br>사는 남자</div>
+    <div>혼자가 아닌<br>모두가<br>이뤄낸 기적</div>
+    <div>그럼에도<br>해맑은<br>아이들</div>
+    <div>큰 나무를<br>베라</div>
+    <div>윤리와<br>예술의<br>경계에서</div>
+    <div>제가<br>부모를<br>고소했어요</div>
+  </div>
+
+  <div class="main-image">
+    <img src="slave-01.jpg" alt="중앙 이미지">
+  </div>
+
+  <div class="quote">
+    <p>“<br>며칠전 까지만해도 가족과 있었는데…<br>
+    그게 모두다… 사라졌다구요…<br>”</p>
+  </div>
+
+  <div class="info">
+    <h2>노예 12년 (2014)<br>12 Years a Slave</h2>
+    <h3>스티브 맥퀸 감독</h3>
+    <p>영국 태생의 영화감독 스티브 맥퀸은 인간이 만들어낸 사회, 사회가 잉태한 인종ㆍ계급ㆍ계층ㆍ성(性)의 이데올로기, 그 부조리가 추동하는 인간 소외에 대한 날카로운 질문들을 끊임없이 우리에게 던져왔다. 감독이 영화를 통해 진정으로 표현하고자 하는 것은, 개인의 힘으로는 깨어질 수 없는 견고한 ‘계급 이데올로기’에 대한 문제의식이다.
+    스티브 맥퀸은 이 영화로 흑인 감독으로는 처음으로 제86회 아카데미 작품상을 수상했다. 맥퀸감독은 자신에게는 뚜렷한 ‘스타일’이 없다고 주장한다. 그의 주장의 요지는 영화는 형식과 내용의 기능적 결합이 가장 중요하다는 것이다.</p></div>
+
+  <div class="small-text">
+    <p>
+      1840년대 미국에서는 노예 수입이 금지되자 흑인 납치 사건이 만연하게 된다. 미국내 자유주(州)의 흑인을 납치해 노예주(州)로 팔아 넘기는 것. 실제로 미국에서는 노예해방령에 의해 노예제도가 없어진 후에도 흑인들을 납치하여 인신매매하는 일들이 있었다. 그 예가 솔로몬 노섭과 농학자 조지 워싱턴 카버의 어머니, 메리이다.
+      <br><br>
+      1841년 뉴욕. 아내 그리고 두 명의 아이와 함께 자유로운 삶을 누리던 음악가 솔로몬 노섭(치웨텔 에지오포)은 어느날 갑자기 납치되어 노예로 팔려간다. 그가 도착한 곳은 노예주 중에서도 악명 높은 루이지애나. 신분을 증명할 방법이 없는 그에게 노예 신분과 ‘플랫’이라는 새 이름이 주어지고, 12년의 시간 동안 두 명의 주인 윌리엄 포드(베네딕트 컴버배치), 에드윈 엡스(마이클 패스벤더)를 만나게 된다.
+      <br><br>
+      일련의 과정을 통해 남부지방의 잔인한 백인들의 행위와 극단적인 육체노동에 시달리는 노예제도를 고발하고 있다. <노예 12년>은 ‘바이올리니스트 자유인’ 솔로몬과 ‘노예’ 플랫이라는 두 사람 몫의 삶을 산 한 흑인 남자의 거짓말 같은 실화를 다룬다. 남북전쟁의 원인이 되기도 하였던 노예제도를 제3자가 아닌 흑인 노예를 겪었던 당사자가 기록한 책으로써 의의가 있다.
+    </p>
+  </div>
+<div class="center-text">
+  <p>
+    모든 등장인물들은 입체적이다. 주인공 솔로몬 노섭은 &lt;노예 12년&gt;를 통해 인간에게 진정한 자유의 의미가 무엇이며 육체노동에 대한 정당한 대가와 인간으로써 기본적으로 가져야 할 권리를 이야기하고 있다. 1808년 뉴욕 주의 자유인으로 태어난 솔로몬은 1841년 일자리를 구해준다는 두 명의 백인에게 속아 워싱턴DC로 갔다가 납치돼 노예상인에게 팔렸다.
+    <br><br>
+    노예 소유주의 성을 따르는 관습에 따라 솔로몬 노섭은 이후 주인이 세 번 바뀌면서 ‘플랫 포드 - 플랫 티비츠 - 플랫 앱스’라는 이름으로 불리며 12년 동안 노예의 굴레가 씌워진 채 살았다. 그의 아버지를 노예로 소유했던 주인의 아들 헨리 노섭이 뉴욕 주지사와 여러 관청에서 솔로몬이 자유인임을 증명하는 문서를 가지고 찾아와 1853년 1월 구출됐다.
+    <br><br>
+    솔로몬 노섭은 납치되어 남부지방에서 12년간 비참한 노예생활을 하다가 북부 주정부에 의해 극적으로 구조되었다. 그는 이 일련의 과정을 통해 남부 지방의 잔인한 백인들의 행위와 극단적인 육체노동에 시달리는 노예제도를 고발하고 있다. 촬영은 루이지애나주의 뉴올리언스에서 2012년 6월 27일부터 8월 13일까지 약 2천만 달러의 제작비로 이루어졌다.
+    
+  </p>
+  <p style="margin-top: 30px; font-style: ibold; color: #ccc; text-align: center; font-size: 18px;  font-weight:800">
+    “<br>정말에 빠져있지 않을거야..<br>자유의 기회가 올 때까지 버틸거라구.<br>”
+  </p>
+</div>
+</div>
+
+<div class="bottom-image">
+  <img src="slave-04.jpg" alt="하단 이미지">
+</div>
+
+<div class="bottom-right-text">
+  <p>
+    ‘노예 12년’의 뜨거운 루이지애나 공기에서 풍기는 교수형과 채찍질의 끔찍한 장면 때문에 가끔은 견디기 힘들어 
+    한 번 이상 고개를 돌린 적이 있다. 주인공 솔로몬 노섭이 마치 나무에 달려있지 않아야 할 위치에 달린 이상한 열매처럼 
+    매달려 있는 동안 농장의 생명체들이 주변을 어슬렁거리는 한 시퀀스는 
+    <strong>테렌스 말릭</strong>의 실존주의 전쟁 영화 <em>씬 레드 라인</em>을 떠올리게 하는 초현실적인 강렬함을 선사한다.
+    <br><br>
+    스티브맥퀸의 장편 영화에서 유달리 긴 싱글 테이크의 2016년도작 <strong>헝거</strong>(신부/죄수 인터뷰장면)와 
+    2013년도작 <strong>셰임</strong>(시시의 노래장면) 같은 반복되는 비유를 발견했는데, 이는 마치 그의 시그니처같이 보인다. 
+    세 편의 장편 영화에서 육체의 형벌에 대한 일관된 관심 - 굶주리고 얽히고 구타당하며 지워지는 방식의 묘사가 일관되게 이루어져 있다.
+    <br><br>
+
+    <strong>한스 짐머</strong>가 작곡한 영화음악은 이 영화에서 중요한 축을 담당한다. 맥퀸 감독은 그의 전작 <em>셰임</em>의 
+    실험을 바탕으로 <em>노예12년</em>에서 영화음악의 수준을 더욱 깊이 끌어올렸다. 
+    공동 제작자 브래드 피트가 등장했던 다소 산만한 3막 카메오 부분만을 제외하면 내러티브의 장인 정신 측면에서 거의 완벽에 가까운 작품이다.
+    <br><br>
+    영화는 책에서 언급된 중요한 사건을 하나 건너뛰었다. 솔로몬은 티베츠와 다시 한 번 싸움을 벌였고, 목숨을 구하기 위해 탈출에 성공했지만 
+    얼마 후 다시 포드에게 돌아온다. 또한 농장주가 고용한 경비병들이 도로를 순찰하고 있었으며 누구나 노예에게 여행 증명서를 요청할 수 있고, 
+    증명서가 없으면 당국에 넘길 수 있는 등 그가 탈출하지 못한 이유에 대해서는 언급하지 않았다. 
+    <br><br>
+    솔로몬은 살아남기보다는 자유롭게 살아가기를 원한 사람이다. 
+    도저히 살 수 없을 것 같은 삶속에서 아슬아슬하게 살아가는 그들의 삶에 허락된 것은 무엇인지, 
+    그런 삶을 버티게 하는 힘은 어디에 있는지 영화는 우리에게 묻고 있다.
+  </p>
+</div>
+
+<div class="footer">
+    <div class="left">
+      <img src="icon.png" alt="아이콘" />
+      <div>+82 4 3829248<br>truestory@filmboard.co.kr</div>
+    </div>
+    <div class="center">
+      <img src="icon.png" alt="아이콘" />
+      <div>L6 Hope Gibbons Building<br>7–11 Dixon Street</div>
+    </div>
+    <div class="right">
+      <img src="icon.png" alt="아이콘" />
+      <div>Facebook<br>Instagram</div>
+    </div>
+  </div>
+
+</body>
+</html>
