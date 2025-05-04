@@ -50,6 +50,18 @@
       height: 25px;
     }
 
+    .menu-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-link:hover div {
+  color: yellow;
+  font-weight: bold;
+}
+
+
+
     .main-image {
       margin-top: 50px;
       margin-bottom: 50px;
@@ -97,11 +109,13 @@
   </div>
 
   <div class="top-menu">
-    <div>자유를<br>갈망하는<br>외침</div>
+    <a href="01.html" class="menu-link">
+    <div>자유를<br>갈망하는<br>외침</div></a>
+
     <div>내 돈은<br>내가<br>지키는 걸로</div>
     <div>인류애에<br>대해 묻다</div>
 
-    <a href="04.html" style="text-decoration: yellow; color: inherit;">
+    <a href="04.html" class="menu-link">
       <div>살아 있는<br>동안에<br>우리는</div>
     </a>
     <div>휴스턴,<br>여기 문제가<br>생겼다</div>
