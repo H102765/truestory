@@ -20,12 +20,12 @@
     }
   
     .container {
-      max-width: 1200px;
-  width: 100%;
-  
-  padding: 60px 80px;
- 
-    }
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  position: relative;
+}
+
     .header {
   display: flex;
   justify-content: flex-end;
@@ -60,10 +60,10 @@
   margin-top: 3rem;
 }
 
-.right-middle-image img {
-  width: 360px;   /* 이미지 너비 (원하시면 더 크게/작게 조정) */
-  height: auto;
-  border-radius: 0px;
+.right-middle-image {
+  position: absolute;
+  right: 5vw;
+  top: 60vh;
 }
 
 .bottom-image {
@@ -158,9 +158,8 @@
 }
 
 .small-image img {
-  width: 420px;  /* 크기 조절 가능 */
+  max-width: 100%;  
   height: auto;
-  border-radius: 0px; /* 둥근 모서리 (선택사항) */
 }
 
 .small-text {
@@ -185,7 +184,8 @@
 }
 
 .bottom-right-text {
-  position: absolute;
+  position: static;
+  margin-top: 2rem;
   right: -170px;
   bottom: -1640px; /* 수직 위치 조정 */
   width: 400px;
