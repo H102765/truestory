@@ -2,57 +2,62 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>자유를 갈망하는 외침</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      width: 1920px;
+      width: 100%;
+  max-width: 1920px;
+  padding: 2rem 5vw; 
       height: 3000px;
       background-color: #000;
       color: #fff;
       font-family: 'Helvetica Neue', sans-serif;
       box-sizing: border-box;
-      padding: 30px 250px;
+    
     }
   
     .container {
-      max-width: 1920px;
+      max-width: 1200px;
   width: 100%;
-  margin: 0 auto;
+  
   padding: 60px 80px;
-  position: relative;
+ 
     }
     .header {
   display: flex;
-  align-items: center;
   justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
   font-size: 36px;
   font-weight: bold;
-  gap: 20px;
+  
 }
 
 .logo {
-  width: 190px; /* 적절한 크기로 조정하세요 */
+  width: 10vw;
+  max-width: 190px; /* 적절한 크기로 조정하세요 */
   height: auto;
 }
-.main-image {
-      margin-top: 50px;
-      margin-bottom: 50px;
+
+/* 메인 이미지 대신 유튜브 영상 */
+.main-video {
+      margin: 50px 0;
     }
 
-    .main-image img {
-  margin-bottom: 100px;
-  width: 1050px;
-  height: auto;
-  display: block;
+    .main-video iframe {
+      width: 100%;
+      height: 56.25vw; /* 16:9 비율 유지 */
+      max-height: 600px;
     }
+
 
     .right-middle-image {
-  position: absolute;
-  right: -150px;   /* 오른쪽 여백 */
-  top: 1100px;     /* 화면 상단으로부터의 위치 (조절 가능) */
+      display: flex;
+  justify-content: flex-end;
+  margin-top: 3rem;
 }
 
 .right-middle-image img {
@@ -88,11 +93,11 @@
     }
     .tagline {
       display: flex;
-      justify-content: space-between;
-      margin-top: 70px;
-      margin-bottom: 90px;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 100px;
       font-size: 15px;
-      line-height: 1.4;
       text-align: center;
     }
     .tagline > div:first-child {
@@ -100,15 +105,14 @@
       font-weight: bold;
     }
 
-    .tagline a.tag-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.tagline a.tag-link:hover div {
-  color: yellow;
-  font-weight: bold;
-}
+    .tagline a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .tagline a:hover div {
+      color: yellow;
+      font-weight: bold;
+    }
 
 
 
@@ -190,16 +194,38 @@
   color: #ccc;
 }
 
-.footer {
-  position: absolute;
-  bottom: -1750px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 350px;
-  font-size: 14px;
-  transform: translateX(-45px); /* 왼쪽으로 100px 이동 */
-}
+    /* 푸터 */
+    .footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px;
+      margin-top: 100px;
+      font-size: 14px;
+    }
+
+  /* 미디어 쿼리로 모바일 대응 */
+  @media (max-width: 768px) {
+      .header {
+        justify-content: center;
+      }
+      .tagline {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .logo {
+        width: 30vw;
+      }
+      .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+
+
+
 
     .footer .left,
     .footer .center,
@@ -226,6 +252,7 @@
     <img src="slave-02.jpg" alt="이미지">
   </div>
 
+  <!-- 헤더 -->
   <div class="header">
     <a href="index.html">
       <img src="logo-02.png" alt="로고" class="logo">
@@ -238,6 +265,7 @@
 
     </div>
   </div>
+
   <div class="tagline">
     <div>자유를<br>갈망하는<br>외침</div>
 
@@ -266,14 +294,10 @@
     <div>제가<br>부모를<br>고소했어요</div>
   </div>
 
-  <div class="main-image">
-    <iframe width="1050" height="591"
-      src="https://www.youtube.com/embed/9jSYOrCuJEI"
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
-  </div>
+  <div class="main-video">
+    <iframe src="https://www.youtube.com/embed/9jSYOrCuJEI" 
+    frameborder="0" allowfullscreen></iframe>
+</div>
 
   <div class="quote">
     <p>“<br>며칠전 까지만해도 가족과 있었는데…<br>
@@ -341,19 +365,13 @@
 </div>
 
 <div class="footer">
-    <div class="left">
-      <img src="icon.png" alt="아이콘" />
-      <div>+82 4 3829248<br>truestory@filmboard.co.kr</div>
-    </div>
-    <div class="center">
-      <img src="icon.png" alt="아이콘" />
-      <div>93, Daehak-ro, Nam-gu<br>Ulsan, Republic of Korea</div>
-    </div>
-    <div class="right">
-      <img src="icon.png" alt="아이콘" />
-      <div>Facebook<br>Instagram</div>
-    </div>
-  </div>
+  <div class="left">+82 4 3829248<br>truestory@filmboard.co.kr</div>
+  <div class="center">93, Daehak-ro, Nam-gu<br>Ulsan, Republic of Korea</div>
+  <div class="right">Facebook<br>Instagram</div>
+</div>
+
+
+
 
 </body>
 </html>
