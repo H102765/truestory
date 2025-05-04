@@ -183,15 +183,21 @@
   transform: translateX(40px); /* 오른쪽으로 100px 이동 */
 }
 
-.bottom-right-text {
-  position: static;
-  
-  right: -170px;
-  bottom: -1640px; /* 수직 위치 조정 */
+
+  .fixed-description {
+  position: fixed;
   width: 400px;
-  font-size: 15px;
-  line-height: 1.7;
-  color: #ccc;
+  bottom: 5vh;   /* 화면 높이의 5%만큼 위 */
+  right: 5vw;    /* 화면 너비의 5%만큼 왼쪽 */
+  max-height: 80vh;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #f0f0f0;
+  padding: 15px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
 }
 
     /* 푸터 */
@@ -340,7 +346,8 @@
       <section class="stillcut">
         <img src="slave-02.jpg" alt="스틸컷 장면1">
         <img src="slave-04.jpg" alt="스틸컷 장면2">
-        <p class="description">
+        <section class="fixed-description">
+          
           <p>
             ‘노예 12년’의 뜨거운 루이지애나 공기에서 풍기는 교수형과 채찍질의 끔찍한 장면 때문에 가끔은 견디기 힘들어 
             한 번 이상 고개를 돌린 적이 있다. 주인공 솔로몬 노섭이 마치 나무에 달려있지 않아야 할 위치에 달린 이상한 열매처럼 
