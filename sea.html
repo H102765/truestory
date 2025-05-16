@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube Shorts 재생</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #000;
+    }
+    .video-container {
+      position: relative;
+      width: 360px;
+      height: 640px;
+      max-width: 100%;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-container">
+    <iframe 
+      src="https://www.youtube.com/embed/x56G5GPQuu8?autoplay=1&mute=1&playsinline=1&loop=1&playlist=x56G5GPQuu8" 
+      allow="autoplay; encrypted-media" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</body>
+</html>
