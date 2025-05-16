@@ -37,3 +37,82 @@
   </div>
 </body>
 </html>
+💡 설명
+https://www.youtube.com/embed/x56G5GPQuu8 형식으로 변환해야 iframe 삽입이 가능하며,
+
+?autoplay=1&mute=1&loop=1&playlist=...을 붙이면 자동 재생 및 반복이 됩니다 (mute는 자동재생 제한 우회를 위해 필수).
+
+Shorts 링크는 직접 삽입이 불가능하므로 embed 형식으로 전환해야 함.
+
+playsinline=1은 모바일 브라우저에서 전체화면 강제 방지입니다.
+
+필요하시면 반응형으로 더 세밀하게 다듬어드릴 수도 있어요.
+
+
+
+
+
+
+
+나의 말:
+반응형으로 해 주세요.
+
+
+ChatGPT의 말:
+아래는 YouTube Shorts 동영상을 반응형(Responsive) 으로 표시해주는 웹페이지 HTML 코드입니다.
+화면 크기에 따라 자동으로 크기를 조절하며, 세로 비율(9:16)을 유지합니다.
+
+✅ 반응형 YouTube Shorts 재생 HTML 코드
+html
+복사
+편집
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube Shorts 반응형 재생</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 400px; /* 최대 너비 */
+      aspect-ratio: 9 / 16;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: none;
+      left: 0;
+      top: 0;
+    }
+
+    @media (max-width: 480px) {
+      .video-wrapper {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="video-wrapper">
+    <iframe 
+      src="https://www.youtube.com/embed/x56G5GPQuu8?autoplay=1&mute=1&playsinline=1&loop=1&playlist=x56G5GPQuu8" 
+      allow="autoplay; encrypted-media" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</body>
+</html>
