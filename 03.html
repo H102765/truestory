@@ -92,37 +92,42 @@
 
 
 
-.footer {
-  
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 390px;
-  font-size: 14px;
-  transform: translateX(3px); /* 왼쪽으로 100px 이동 */
+  .footer {
+ 
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ gap: 390px;
+ font-size: 14px;
+ transform: translateX(3px); /* 왼쪽으로 100px 이동 */
 }
 
-    .footer .left,
-    .footer .center,
-    .footer .right {
-      display: flex;
-      align-items: center;
-      margin-bottom: 60px; 
-      gap: 15px;
-    }
+   .footer .left,
+   .footer .center,
+   .footer .right {
+     display: flex;
+     align-items: center;
+     margin-bottom: 60px; 
+     gap: 15px;
+   }
 
-    .footer img {
-      width: 25px;
-      height: 25px;
-    }
+   .footer img {
+     width: 25px;
+     height: 25px;
+   }
 
-    .footer a {
-  color: white;
-  text-decoration: none;
+   .footer .right {
+     text-align: right;
+   }
+
+
+   .footer a {
+ color: white;
+ text-decoration: none;
 }
 
 .footer a:hover {
-  color: white;
+ color: white;
 }
 
   </style>
@@ -205,16 +210,14 @@
             감독은 감정을 과장하거나 신파적인 연출을 최대한 배제하고, 
             담담하고 객관적인 시선으로 역사의 현장을 그려낸다.<br><br>홀로코스트에서 잃은 사촌들과 미국 내 홀로코스트 생존자에게 영어를 가르친 할머니, 
             유대인이라는 이유만으로 따돌림당했던 유년 시절까지 스필버그의 삶에는 홀로코스트의 이미지가 가까이 있었다. 
-            토머스 케닐리의 원작 소설에서 홀로코스트를 향한 초연한 시선을 읽고 비로소 영화로 이야기하기로 마음먹었지만 
-            실제 연출을 맡기까지 10년 동안 망설였다. 만드는 내내 스필버그를 감정적으로 소진시켰다는 
-            <쉰들러 리스트>는 그에게 비로소 작품상과 감독상 등 7개의 오스카 트로피를 안겼다.
+            
   </table>
 
 
 
 
 
-  <table style="width: 100%; border-spacing: 40px 20px;">
+  <table class="content" style="width: 100%; border-spacing: 40px 20px;">
   <tr>
     <!-- 첫 번째 이미지와 설명 -->
     <td style="width: 30%; vertical-align: top;">
@@ -222,13 +225,14 @@
       alt="장면1" style="width: 100%; height: 300px; object-fit: cover; display: block; margin-bottom: 10px;">
     
       <p style="text-align: left;">
-        <br>단순히 영화를 넘어선 역사적 증언이자 인류애에 대한 깊은 성찰을 담고 있는 작품. 홀로코스트를 다룬 작품으로 토머스 캐닐리의 소설 
+        단순히 영화를 넘어선 역사적 증언이자 인류애에 대한 깊은 성찰을 담고 있는 작품. 홀로코스트를 다룬 작품으로 토머스 캐닐리의 소설 
         <쉰들러의 방주 Schindler’s Ark>가 원작이다. 제66회 아카데미 시상식 작품상을 수상한 바 있다. 제2차 세계대전, 
           나치의 홀로코스트라는 인류 역사상 가장 어두운 시기를 배경으로, 독일 사업가 오스카 쉰들러 Oskar Schindler(1908~1978)가 수많은 유대인의 생명을 구원한 실화를 바탕으로 한 영화. 
           <p> 영화 초반, 오스카 쉰들러는 전쟁이라는 혼란 속에서 부를 축적하려는 이기적인 사업가로 그려진다. 
             유대인 노동력을 값싸게 이용해 공장을 운영하고, 나치 고위 간부들에게 뇌물을 바치며 자신의 이익을 추구하는 
             전형적인 기회주의자의 모습을 보여준다. 하지만 그는 크라쿠프 게토의 참상, 그리고 유대인 학살 현장을 목격하면서 점차 변화하기 시작한다. <br><br>
-            
+            나치 독일은 유대인을 판단할 때 생존 가능성을 ‘기술’이라는 기준으로 삼았다. 그 기술이 없다면,목적지도 모른 채 트럭에 실려가는 운명이 기다리고 있었다.
+      쉰들러는 1908년 체코슬로바키아 츠비타우 Zwittau의 부유한 가정에서 태어났다.
 <img src="slist.png"
 alt="장면1" style="width: 100%; height: 300px; object-fit: cover; display: block; margin-bottom: 10px;">
       </p>
@@ -239,12 +243,11 @@ alt="장면1" style="width: 100%; height: 300px; object-fit: cover; display: blo
 
       
       
-      나치 독일은 유대인을 판단할 때 생존 가능성을 ‘기술’이라는 기준으로 삼았다. 그 기술이 없다면,목적지도 모른 채 트럭에 실려가는 운명이 기다리고 있었다.
-      쉰들러는 1908년 체코슬로바키아 츠비타우 Zwittau의 부유한 가정에서 태어났다.<br><br> 유럽 전역을 휩쓸었던 경제 위기의 여파로 집안이 몰락한 후 그는 실업자가 되었고, 뒤이어 나치당에 가입했다. 
+      유럽 전역을 휩쓸었던 경제 위기의 여파로 집안이 몰락한 후 그는 실업자가 되었고, 뒤이어 나치당에 가입했다. 
       사치를 일삼고 술을 좋아하던 난봉꾼이었던 그에게 나치 독일의 폴란드 침공은 큰 기회를 가져다 주었다. 한밑천 잡기 위해 고향을 떠나 폴란드 남부의 크라쿠프로 간 그는 친위대원들에게 뇌물을 주고 암시장에서 물건을 사고팔아 마련한 돈으로 게토 가까이에 있던 유대인 소유 공장을 인수하는 데 성공했다. 
-      유대인 노예노동은 그에게 일확천금을 보장해주는 효과적 방법이었다.<br>
+      유대인 노예노동은 그에게 일확천금을 보장해주는 효과적 방법이었다.
       <br> <hr><p style="text-align: center; font-weight: bold;" > 
-           “좀 더 구해낼 수 있었어”<br></p><hr><br>
+           “좀 더 구해낼 수 있었어”<br></p><hr>
           
            자신의 공장이 플라주프 강제노역수용소 안에 있었기 때문에 자세히 관찰하게 된 유대인의 현실은 그의 생각을 바꾸어놓았다. 
            동부 지역의 3대 절멸수용소에서 악명을 떨쳤던 아몬 괴트 Amon Leopold Goth가 플라주프 수용소 소장을 맡은 후 저지른일들을 보면서, 
@@ -273,7 +276,7 @@ alt="장면1" style="width: 100%; height: 300px; object-fit: cover; display: blo
               생명은 구해지고 새로운 새대가 탄생했습니다.<br>
               그것이 바로 이 이야기의 핵심입니다.<br>
               단, 한명의 인간이 변화를 가져올 수 있다는 것이죠. </p><hr>
-<br>
+
               <쉰들러 리스트>는 프랑스에서 교육용 영상으로 활용됐던 
               <밤과 안개>나 일부 시네필 및 연구자들이 주로 접했던 <쇼아>보다 훨씬 대중적인 문법으로, 주류 할리우드 
               시스템의 권력을 전폭적으로 이용하며 아우슈비츠의 존재를 세계적으로 알렸다. 
