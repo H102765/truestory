@@ -28,50 +28,19 @@
     .header {
   display: flex;
   align-items: center;
+  margin-top: 50px; 
   justify-content: flex-end;
+  margin-right: 20px;
   font-size: 36px;
   font-weight: bold;
   gap: 20px;
 }
 
 .logo {
-  width: 190px; /* 적절한 크기로 조정하세요 */
+  width: 210px; /* 적절한 크기로 조정하세요 */
   height: auto;
 }
-.main-image {
-      margin-top: 50px;
-      margin-bottom: 50px;
-    }
 
-    .main-image img {
-  margin-bottom: 100px;
-  width: 1050px;
-  height: auto;
-  display: block;
-    }
-
-    .right-middle-image {
-  position: absolute;
-  right: -150px;   /* 오른쪽 여백 */
-  top: 1113px;     /* 화면 상단으로부터의 위치 (조절 가능) */
-}
-
-.right-middle-image img {
-  width: 360px;   /* 이미지 너비 (원하시면 더 크게/작게 조정) */
-  height: auto;
-  border-radius: 0px;
-}
-
-.bottom-image {
-  margin-top: 500px;  /* 이전 요소와의 간격 */
-  text-align: left; /* 가운데 정렬 */
-}
-
-.bottom-image img {
-  width: 920px;  /* 필요에 따라 크기 조절 */
-  height: auto;
-  border-radius: 0px; /* 선택사항: 둥글게 처리 */
-}
 
 
 .title-text {
@@ -89,10 +58,10 @@
     }
     .tagline {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       margin-top: 70px;
       margin-bottom: 90px;
-      font-size: 15px;
+      font-size: 16px;
       line-height: 1.4;
       text-align: center;
     }
@@ -113,6 +82,11 @@
 }
 
 
+.content {
+    line-height: 1.8;
+    margin-bottom: 15px;
+    max-width: 100%;
+  }
 
 
 
@@ -120,61 +94,7 @@
 
 
   
-    .quote {
-  position: absolute;
-  right: 470px; /* info와 정렬 맞춤 */
-  bottom: -310px;  /* info보다 아래쪽 위치 */
-  width: 580px;
-  color: #fff;
-  font-size: 17px;
-  line-height: 1.6;
-  text-align: center;
-  font-weight:800
-
-}
-.small-image {
-  position: absolute;
-  right: -190px;   /* 화면 오른쪽 여백 */
-  bottom: -1250px;  /* 화면 하단 여백 */
-}
-
-.small-image img {
-  width: 420px;  /* 크기 조절 가능 */
-  height: auto;
-  border-radius: 0px; /* 둥근 모서리 (선택사항) */
-}
-
-.small-text {
-  position: absolute;
-  right: 850px;
-  bottom: -800px;
-  width: 420px;
-  font-size: 15px;
-  line-height: 1.7;
-  color: #ccc;
-}
-
-.center-text {
-  margin: 50px auto -470px auto;
-  width: 400px;
-  font-size: 15px;
-  line-height: 1.7;
-  text-align: justify;
-  color: #ccc;
-
-  transform: translateX(20px); /* 오른쪽으로 100px 이동 */
-}
-
-.bottom-right-text {
-  position: absolute;
-  right: -170px;
-  bottom: -940px; /* 수직 위치 조정 */
-  width: 400px;
-  font-size: 15px;
-  line-height: 1.7;
-  color: #ccc;
-}
-
+ 
 
 
 
@@ -213,6 +133,7 @@
     .footer .right {
       display: flex;
       align-items: center;
+      margin-bottom: 60px; 
       gap: 15px;
     }
 
@@ -307,8 +228,9 @@
 
 
 
-  <td style="width: 20%; vertical-align: top; padding: 5px;">
-        <h2>아폴로 13 (1995) <br>Apollo 13</h2>
+  <td style="width: 18%; vertical-align: top; padding: 0px; line-height: 1.8;
+        margin-bottom: 0px;">
+        <h2 style="margin-top: 10px;">아폴로 13 (1995) <br>Apollo 13</h2>
         <p>론 하워드 감독<br></p>
         <p>론 하워드는 양친이 모두 배우이고 형도 배우인 배우 가족의 둘째로 태어났으며 <앤디 그리피스 쇼>와 <해피 데이즈> 같은 TV 드라마에 아역으로 출연하며 인기를 얻었다. 
             아카데미상을 수상한 바 있는 그는 자신의 세대에서 가장 유명한 감독 중 한명이다. 
@@ -323,7 +245,7 @@
 
 
 
-  <table style="width: 100%; border-spacing: 40px 20px;">
+  <table style="width: 100%; border-spacing: 20px 10px;">
   <tr>
     <!-- 첫 번째 이미지와 설명 -->
     <td style="width: 30%; vertical-align: top;">
