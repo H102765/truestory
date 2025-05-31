@@ -28,50 +28,20 @@
     .header {
   display: flex;
   align-items: center;
+  margin-top: 50px; 
   justify-content: flex-end;
+  margin-right: 20px;
   font-size: 36px;
   font-weight: bold;
-  gap: 20px;
+  gap: 50px;
 }
 
 .logo {
-  width: 190px; /* 적절한 크기로 조정하세요 */
+  width: 210px; /* 적절한 크기로 조정하세요 */
   height: auto;
 }
-.main-image {
-      margin-top: 50px;
-      margin-bottom: 50px;
-    }
 
-    .main-image img {
-  margin-bottom: 100px;
-  width: 1050px;
-  height: auto;
-  display: block;
-    }
 
-    .right-middle-image {
-  position: absolute;
-  right: -150px;   /* 오른쪽 여백 */
-  top: 1113px;     /* 화면 상단으로부터의 위치 (조절 가능) */
-}
-
-.right-middle-image img {
-  width: 360px;   /* 이미지 너비 (원하시면 더 크게/작게 조정) */
-  height: auto;
-  border-radius: 0px;
-}
-
-.bottom-image {
-  margin-top: 500px;  /* 이전 요소와의 간격 */
-  text-align: left; /* 가운데 정렬 */
-}
-
-.bottom-image img {
-  width: 920px;  /* 필요에 따라 크기 조절 */
-  height: auto;
-  border-radius: 0px; /* 선택사항: 둥글게 처리 */
-}
 
 
 .title-text {
@@ -87,15 +57,17 @@
       max-width: 1400px;
       text-align: center;
     }
+
     .tagline {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       margin-top: 70px;
       margin-bottom: 90px;
-      font-size: 15px;
+      font-size: 16px;
       line-height: 1.4;
       text-align: center;
     }
+
     .tagline div:nth-child(12) {
       color: yellow;
       font-weight: bold;
@@ -114,66 +86,11 @@
 
 
 
-
-
-
-
-
-  
-    .quote {
-  position: absolute;
-  right: 470px; /* info와 정렬 맞춤 */
-  bottom: -310px;  /* info보다 아래쪽 위치 */
-  width: 580px;
-  color: #fff;
-  font-size: 17px;
-  line-height: 1.6;
-  text-align: center;
-  font-weight:800
-
-}
-.small-image {
-  position: absolute;
-  right: -190px;   /* 화면 오른쪽 여백 */
-  bottom: -1250px;  /* 화면 하단 여백 */
-}
-
-.small-image img {
-  width: 420px;  /* 크기 조절 가능 */
-  height: auto;
-  border-radius: 0px; /* 둥근 모서리 (선택사항) */
-}
-
-.small-text {
-  position: absolute;
-  right: 850px;
-  bottom: -800px;
-  width: 420px;
-  font-size: 15px;
-  line-height: 1.7;
-  color: #ccc;
-}
-
-.center-text {
-  margin: 50px auto -470px auto;
-  width: 400px;
-  font-size: 15px;
-  line-height: 1.7;
-  text-align: justify;
-  color: #ccc;
-
-  transform: translateX(20px); /* 오른쪽으로 100px 이동 */
-}
-
-.bottom-right-text {
-  position: absolute;
-  right: -170px;
-  bottom: -940px; /* 수직 위치 조정 */
-  width: 400px;
-  font-size: 15px;
-  line-height: 1.7;
-  color: #ccc;
-}
+.content {
+    line-height: 1.8;
+    margin-bottom: 15px;
+    max-width: 100%;
+  }
 
 
 
@@ -184,6 +101,11 @@
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
       margin: 30px 0;
+      width: 1360px; /* 픽셀너비지정 */
+      margin-bottom: 60px; 
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .ratings div {
@@ -198,14 +120,14 @@
 
 
 
-.footer {
+    .footer {
  
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 400px;
-  font-size: 14px;
-  transform: translateX(-45px); /* 왼쪽으로 100px 이동 */
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ gap: 390px;
+ font-size: 14px;
+ transform: translateX(3px); /* 왼쪽으로 100px 이동 */
 }
 
     .footer .left,
@@ -213,6 +135,7 @@
     .footer .right {
       display: flex;
       align-items: center;
+      margin-bottom: 60px; 
       gap: 15px;
     }
 
@@ -307,18 +230,17 @@
 
 
 
-  <td style="width: 20%; vertical-align: top; padding: 5px;">
+  <td style="width: 18%; vertical-align: top; padding: 0px; line-height: 1.8;
+        margin-bottom: 0px;">
         <h2>설리:허드슨강의 기적 (2016) Sully</h2>
         <p>클린트 이스트우드 감독<br></p>
         <p>스타일에 전혀 의존하지 않고 이야기와 캐릭터만으로 이만큼 묵직한 의미를 전하는 감독은 적어도 할리우드에선 이스트우드 외에는 없으며, 
             그런 의미에서 그는 희귀한 고전적 작가이다. 
-            <br><br>
+            
             그의 이름을 명실상부한 거장의 반열에 오르게 한 작품은 아카데미 작품상 및 감독상 수상작인
              <용서받지 못한 자 Unforgiven>(1992)였다. 
              자신이 출연했던 서부극의 관습을 뒤집은 이 영화에서 이스트우드는 현대 미국사회에 대한 냉정한 통찰을 드러내는 데 
-             그치지 않고 자신의 영화적 이력에 대한 고통스럽고 깊은 명상에 잠겨 있는 듯 했다.
-            장르영화의 힘, 그것의 엄청난 대중성을 가능케 한 배후의 구조와 이데올로기, 
-            그것을 통해 스타에 이르게 된 자신 모두가 이 성찰의 대상이 되고, 
+             그치지 않고 자신의 영화적 이력에 대한 고통스럽고 깊은 
             명상적 자세가 영화 전체에 불가해한 위엄을 부여한다.
         </p></td>
     </tr>
@@ -327,17 +249,20 @@
 
 
 
-
-  <table style="width: 100%; border-spacing: 40px 20px;">
+  <div class="content">
+  <table style="width: 100%; border-spacing: 20px 10px; margin-top: 10px; margin-bottom: 60px;" >
   <tr>
     <!-- 첫 번째 이미지와 설명 -->
     <td style="width: 30%; vertical-align: top;">
       <img src="sully-01.jpg"
-      alt="장면1" style="width: 100%; height: 300px; object-fit: cover; display: block; margin-bottom: 10px;">
-      <br> <p style="text-align: center; font-weight: bold;"> “ 비상착륙입니다. ”</p><br><hr>
+      alt="장면1" style="width: 100%; height: 300px; object-fit: cover; display: block; margin-top: 7px; margin-bottom: 10px;">
+       <p style="text-align: center; font-weight: bold;"> “ 비상착륙입니다. ”</p><hr>
       <p style="text-align: left;">
         <설리: 허드슨강의 기적>(이하 <설리>)은 2009년 허드슨강에 수상 착륙해 
         승객들의 목숨을 구한 체슬리 설렌버거 기장(애칭 ‘설리’)의 실화를 다룬다. 
+        2009년 양쪽 날개 엔진을 모두 잃고 뉴욕 허드슨강에 비상착수했으나 
+        탑승자 전원이 생존한 US 항공기 1549편의 기적적인 실화, ‘허드슨강의 기적’을 바탕으로 하는 영화다.
+        <br><br>
         승객과 승무원을 포함한 155명을 태우고 뉴욕의 라과디아 공항을 출발해 
         노스캐롤라이나의 샬럿으로 가던 US 에어웨이스 1549편은 850m 상공에서 
         날아든 새떼와 충돌해 엔진 2개가 정지되는 사고를 당한다. 
@@ -353,30 +278,35 @@ alt="장면1" style="width: 100%; height: 300px; object-fit: cover; display: blo
     <!-- 두 번째 이미지와 설명 -->
     <td style="width: 30%; vertical-align: top; text-align: left;">
          
-        2009년 양쪽 날개 엔진을 모두 잃고 뉴욕 허드슨강에 비상착수했으나 
-        탑승자 전원이 생존한 US 항공기 1549편의 기적적인 실화, ‘허드슨강의 기적’을 바탕으로 하는 영화다. <br>
+     
         하지만 언제나 그랬듯 이스트우드의 관심은 사건이 아니라 사람에게 있다. 
         모두가 기적이라 말하는 순간에도 끊임없이 자신의 선택을 의심하는 고독한 영웅, 
         1549편 기장 체슬리 설렌버거는 해피엔딩 스토리에 대한 이스트우드의 새로운 관점을 엿보게 해주는 인물이다. 
-       </p><br>
+        <설리>의 오프닝 시퀀스는 이같은 이야기의 성격을 명확하게 신호한다. 
+        영화는 문제가 생긴 비행기를 비상착륙하는 순간 설리의 헤드셋에서 들리는 음성의 보이스 오버 사운드로 열린다.</p>
         
           <img src="sully-02.jpg"
           alt="장면2" style="width: 100%; height: 300px; object-fit: cover; display: block; margin-bottom: 10px;">
 
           
 
-          <br><p style="text-align: center; font-weight: bold;" >
-            “ 기장입니다. 충격에 대비하세요. ”</p><br><hr>
+          <p style="text-align: center; font-weight: bold;" >
+            “ 기장입니다. 충격에 대비하세요. ”</p><hr>
          
-          <p> <설리>의 오프닝 시퀀스는 이같은 이야기의 성격을 명확하게 신호한다. 
-            영화는 문제가 생긴 비행기를 비상착륙하는 순간 설리의 헤드셋에서 들리는 음성의 보이스 오버 사운드로 열린다. 
+          <p>  
             이어서 우리가 처음으로 보게 되는 것은 검붉은 화염을 뿌리며 뉴욕의 도심 한복판으로 추락하는 항공기다. 
-            명백하게 9·11의 비전을 연상시키는 오프닝 시퀀스로 인해 <설리>는 무엇이 오늘날 
+            명백하게 9·11테러를 연상시키는 오프닝 시퀀스로 인해 <설리>는 무엇이 오늘날 
             미국의 재앙을 야기했는가에 대한 정치적인 이야기가 된다. 
             이스트우드는 자신의 끈질긴 테마 중 하나인, 흔들리는 ‘주체성’에 관한 이야기로 영화를 끌고 간다. 
             “해야 할 일을 하라”는 주문은 축적된 경험과 연륜 안에서 공감을 자아내기에 충분하다. 
             권리가 아닌 의무에 기초한 풀뿌리 정치의 가치를 앞세우면서
-             이스트우드는 개인의 운명과 이해관계가 공동체의 그것과 어떻게 연결되는지에 대한 지도를 그린다. </p>
+             이스트우드는 개인의 운명과 이해관계가 공동체의 그것과 어떻게 연결되는지에 대한 지도를 그린다.
+            <br><br>
+             지난 40여년 동안 클린트 이스트우드는 걸걸하고 거친, 그러나 자신이 해야 할 일에 관해서는 강인한 ‘남자’에 관한 영화들을 
+             양산해왔다. 이스트우드가 창조한 주인공들은 스크린에 모습을 드러낸 뒤 자신이 해야 할 일을 찾고, 
+             임무를 수행한 뒤 조용히 사라진다.
+             과묵하고 신비로운 이 인물들은 금욕적이고 정의와 책임감을 구현한 존재들이다. 
+             요컨대 그들은 ‘인간’을 넘어선 ‘신화’다.</p>
              
 
 
@@ -386,20 +316,16 @@ alt="장면1" style="width: 100%; height: 300px; object-fit: cover; display: blo
 
     <td style="width: 30%; vertical-align: top; text-align: left;">
       <img src="sully-04.jpg"
-      alt="장면2" style="width: 100%; height: 300px; object-fit: cover; display: block; margin-bottom: 10px;">
+      alt="장면2" style="width: 100%; height: 300px; object-fit: cover; display: block;  margin-top: 7px; margin-bottom: 10px;">
      
-          <p>지난 40여년 동안 클린트 이스트우드는 걸걸하고 거친, 그러나 자신이 해야 할 일에 관해서는 강인한 ‘남자’에 관한 영화들을 
-            양산해왔다. 이스트우드가 창조한 주인공들은 스크린에 모습을 드러낸 뒤 자신이 해야 할 일을 찾고, 
-            임무를 수행한 뒤 조용히 사라진다. 과묵하고 신비로운 이 인물들은 금욕적이고 정의와 책임감을 구현한 존재들이다. 
-            요컨대 그들은 ‘인간’을 넘어선 ‘신화’다. 
-            <설리: 허드슨강의 기적>(이하 <설리>)은 이러한 전형의 주인공을 제시한다.</p>
+          
                 <p>
-       
-                    클린트 이스트우드가 <설리>에서 추구하는 것은 영웅주의의 본질이다. 
+      
+                    클린트 이스트우드가 <설리>에서 추구하는 것은 이러한 전형의 주인공, 영웅주의의 본질이다. 
                     주인공 설리는 이스트우드의 영화에서 익숙하게 보아온 영웅성을 품은 인물이다. 
                     <포레스트 검프>(1994)와 <스파이 브릿지>(2015)의 영웅주의를 형상화했던 톰 행크스가 설리를 연기한다. 
                     항공기 사고사(史)에서 위대한 기적 중 하나를 재창조한 영화로 받아들여지면서 박스오피스에서 승승장구하고 있는 
-                    <설리>는 그러나 한 시간 반 동안 설리의 용기와 비행능력에만 집중하지 않는다. 초점은 다른 곳에 있다.
+                    <설리>는 그러나 한 시간 반 동안 설리의 용기와 비행능력에만 집중하지 않는다. 초점은 다른 곳에 있다.<br><br>
                      의심의 여지없는 이 영웅 스토리에서 갈등은 어디 존재하는가? 순수하고 빛나는 영웅으로 
                      미디어에 의해 스포트라이트를 받는 설리의 이야기를 서사화하는 데 있어 이스트우드는 휘황하게 포장된 
                      미디어의 영웅 신화를 산산이 부수고 그 비극적 본성을 화제 삼는다. <설리>의 내러티브는 명과 암을 오가지만 상당 분량은 
@@ -432,11 +358,11 @@ alt="장면1" style="width: 100%; height: 300px; object-fit: cover; display: blo
         
  <!-- 평점 -->
  <div class="ratings">
-    <div><strong>김혜리</strong><br/>⭐⭐⭐<br/>‘아메리칸 파일럿.’ <br>이스트우드 버전의 나직한 톰 행크스</div>
-    <div><strong>장영엽</strong><br/>⭐⭐⭐<br/>
+    <div><strong style="font-size: 1.2em;">김혜리</strong><br/>⭐⭐⭐<br/>‘아메리칸 파일럿.’ <br>이스트우드 버전의 나직한 톰 행크스</div>
+    <div><strong style="font-size: 1.2em;">장영엽</strong><br/>⭐⭐⭐<br/>
         포스트 9·11과 경제 불황의 그늘에서 탄생한, <br/>이스트우드의 이카루스</div>
-    <div><strong>박평식</strong><br/>⭐⭐⭐<br/>그에게 연출은 인간을 옹호하는 일</div>
-    <div><strong>허남웅</strong><br/>⭐⭐⭐⭐<br/>그곳엔 ‘책임감’이 있었다.</div>
+    <div><strong style="font-size: 1.2em;">박평식</strong><br/>⭐⭐⭐<br/><br>그에게 연출은 인간을 옹호하는 일</div>
+    <div><strong style="font-size: 1.2em;">허남웅</strong><br/>⭐⭐⭐⭐<br/><br>그곳엔 ‘책임감’이 있었다.</div>
   </div>
 
 
