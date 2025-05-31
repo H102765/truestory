@@ -16,7 +16,7 @@
       color: #fff;
       font-family: 'Helvetica Neue', sans-serif;
       box-sizing: border-box;
-      padding: 30px 250px;
+      padding: 10px 250px;
     }
   
     .container {
@@ -29,50 +29,21 @@
     .header {
   display: flex;
   align-items: center;
+  margin-top: 50px; 
   justify-content: flex-end;
+  margin-right: 20px;
   font-size: 36px;
   font-weight: bold;
-  gap: 20px;
+  gap: 50px;
 }
 
 .logo {
-  width: 190px; /* 적절한 크기로 조정하세요 */
+  width: 210px; /* 적절한 크기로 조정하세요 */
   height: auto;
 }
-.main-image {
-      margin-top: 50px;
-      margin-bottom: 50px;
-    }
 
-    .main-image img {
-  margin-bottom: 100px;
-  width: 1050px;
-  height: auto;
-  display: block;
-    }
 
-    .right-middle-image {
-  position: absolute;
-  right: -150px;   /* 오른쪽 여백 */
-  top: 1113px;     /* 화면 상단으로부터의 위치 (조절 가능) */
-}
 
-.right-middle-image img {
-  width: 360px;   /* 이미지 너비 (원하시면 더 크게/작게 조정) */
-  height: auto;
-  border-radius: 0px;
-}
-
-.bottom-image {
-  margin-top: 500px;  /* 이전 요소와의 간격 */
-  text-align: left; /* 가운데 정렬 */
-}
-
-.bottom-image img {
-  width: 920px;  /* 필요에 따라 크기 조절 */
-  height: auto;
-  border-radius: 0px; /* 선택사항: 둥글게 처리 */
-}
 
 
 .title-text {
@@ -90,10 +61,10 @@
     }
     .tagline {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       margin-top: 70px;
       margin-bottom: 90px;
-      font-size: 15px;
+      font-size: 16px;
       line-height: 1.4;
       text-align: center;
     }
@@ -114,77 +85,30 @@
 }
 
 
+.content {
+    line-height: 1.8;
+    margin-bottom: 15px;
+    max-width: 100%;
+  }
 
 
 
 
 
 
-  
-    .quote {
-  position: absolute;
-  right: 470px; /* info와 정렬 맞춤 */
-  bottom: -310px;  /* info보다 아래쪽 위치 */
-  width: 580px;
-  color: #fff;
-  font-size: 17px;
-  line-height: 1.6;
-  text-align: center;
-  font-weight:800
-
-}
-.small-image {
-  position: absolute;
-  right: -190px;   /* 화면 오른쪽 여백 */
-  bottom: -1250px;  /* 화면 하단 여백 */
-}
-
-.small-image img {
-  width: 420px;  /* 크기 조절 가능 */
-  height: auto;
-  border-radius: 0px; /* 둥근 모서리 (선택사항) */
-}
-
-.small-text {
-  position: absolute;
-  right: 850px;
-  bottom: -800px;
-  width: 420px;
-  font-size: 15px;
-  line-height: 1.7;
-  color: #ccc;
-}
-
-.center-text {
-  margin: 50px auto -470px auto;
-  width: 400px;
-  font-size: 15px;
-  line-height: 1.7;
-  text-align: justify;
-  color: #ccc;
-
-  transform: translateX(20px); /* 오른쪽으로 100px 이동 */
-}
-
-.bottom-right-text {
-  position: absolute;
-  right: -170px;
-  bottom: -940px; /* 수직 위치 조정 */
-  width: 400px;
-  font-size: 15px;
-  line-height: 1.7;
-  color: #ccc;
-}
 
 
-
-
-.ratings {
+  .ratings {
       grid-column: 1 / -1;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 20px;
-      margin: 30px 0;
+      margin: 40px 0;
+      width: 1820px; /* 픽셀너비지정 */
+      transform: translateX(25px);
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .ratings div {
@@ -204,16 +128,17 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 400px;
+  gap: 390px;
   font-size: 14px;
-  transform: translateX(-45px); /* 왼쪽으로 100px 이동 */
+  transform: translateX(3px); /* 왼쪽으로 100px 이동 */
 }
 
-    .footer .left,
+.footer .left,
     .footer .center,
     .footer .right {
       display: flex;
       align-items: center;
+      margin-bottom: 60px; 
       gap: 15px;
     }
 
@@ -307,43 +232,41 @@
 
 
 
-
-  <td style="width: 20%; vertical-align: top; padding: 5px;">
+    
+  <td style="width: 18%; vertical-align: top; padding: 0px; line-height: 1.76;
+        ">
        
-        <h2>피부를 판 남자 (2021) <br>The Man Who<br> Sold His Skin</h2>
+        <h2 style="margin-top: 10px;">피부를 판 남자 (2021) <br>The Man Who<br> Sold His Skin</h2>
         <p>카우타르 벤 하니야 감독<br></p>
         <p>첫 장편 극영화 <뷰티 앤 더 독스>(2017)로 칸국제영화제 주목할 만한 시선 부문에 초청받은 
-            튀니지의 여성감독 카우타르 벤 하니야의 작품이다.<br> <br>
-
+            튀니지의 여성감독 카우타르 벤 하니야의 작품이다.
+            제77회 베니스국제영화제에서 오리종티 최우수연기상과 에디포 레상을 수상했고, 
+            제93회 아카데미 국제영화상 후보에 올랐다.
           벨기에의 독창적인 예술가 빔 델보예의 실화를 바탕으로 시리아 난민을 주인공 삼아 난민 문제, 인간 존엄성과 권리, 
-          예술과 자본의 역학 관계를 도발적인 시선과 강렬한 에너지로 아우른다.  <br> <br>
-          인간이 아닌 상품이 되어서야 자유를 얻은 듯했던 주인공이 진정한 자유를 찾기 위한 
+          예술과 자본의 역학 관계를 도발적인 시선과 강렬한 에너지로 아우른다. 진정한 자유를 찾기 위한 
           일련의 행위에 대한 반응을 통해 우리 사회의 위선과 오만 또한 꼬집는다. 
-          제77회 베니스국제영화제에서 오리종티 최우수연기상과 에디포 레상을 수상했고, 
-          제93회 아카데미 국제영화상 후보에 올랐다.
-  
+         
         </p></td>
     </tr>
   </table>
 
-
   <!-- 평점 -->
-  <div class="ratings">
-    <div><strong>박평식</strong><br/>⭐⭐⭐<br/>굴욕의 개인사로 착취의 시대상을</div>
-    <div><strong>이용철</strong><br/>⭐⭐⭐<br/>
+  <div class="ratings margin-bottom: 40px;">
+    <div><strong style="font-size: 1.2em;">박평식</strong><br/><br>⭐⭐⭐<br/>굴욕의 개인사로 착취의 시대상을</div>
+    <div><strong style="font-size: 1.2em;">이용철</strong><br/><br>⭐⭐⭐<br/>
       인간의 비극, 피부의 영광</div>
-    <div><strong>박정원</strong><br/>⭐⭐⭐<br/>
+    <div><strong style="font-size: 1.2em;">박정원</strong><br/>⭐⭐⭐<br/>
       팔 수 있는 것과 팔 수 없는 것,<br>그 경계의 함정과 쓴웃음</div>
     </div>
 
 
-
-  <table style="width: 100%; border-spacing: 40px 20px;">
+    <div class="content ">
+  <table style="width: 100%; border-spacing: 20px 10px; margin-top: 50px; margin-bottom: 60px;">
   <tr>
     <!-- 첫 번째 이미지와 설명 -->
-    <td style="width: 30%; vertical-align: top;">
+    <td style="width: 30%; vertical-align: top; padding: 0;" >
       <img src="skin-01.jpg"
-      alt="장면1" style="width: 100%; height: 300px; object-fit: cover; display: block; margin-bottom: 10px;">
+      alt="장면1" style="width: 100%; height: 260px; object-fit: cover; display: block; margin-top: 7px; margin-bottom: 10px;">
       <p style="text-align: center; font-weight: bold;">“예술품보다 못한 난민의 처지.”</p><hr>
       <p style="text-align: left;">
         2011년, 시리아 청년 샘(야흐야 마하이니)은 억압을 피해 레바논으로 도망친다. 
@@ -352,9 +275,13 @@
         등에 타투를 새겨 살아 있는 예술품으로 전시될 것을 제안한다. 유럽의 솅겐 비자를 등에 타투로 
         새긴 채 미술관에 전시된 샘은 세간의 이목을 집중시키고, 일등석과 5성급 호텔을 누리는 일약 스타가 된다. 
         그럼에도 자신이 바라던 것과 동떨어진 삶을 살고 있다고 느끼던 어느 날, 
-        샘은 미술관에서 헤어진 연인 아비르(디아 리앤)와 마주친다.<br><br></p>
+        샘은 미술관에서 헤어진 연인 아비르(디아 리앤)와 마주친다.
+      
+        벨기에의 예술가인 빔 델보예(Wim Delvoye)가 2008년에 스위스인 팀 스타이너(Tim Steiner)의 등에
+        타투를 새기는 방법으로 자신의 등을 살아있는 미술품으로 계약했다는 것은 사실이며, 
+        이 실화가 이 작품의 모티프가 되었다.</p>
 <img src="skin-04.jpg"
-alt="장면1" style="width: 100%; height: 300px; object-fit: cover; display: block; margin-bottom: 10px;">
+alt="장면1" style="width: 100%; height: 280px; object-fit: cover; display: block; margin-bottom: 10px;">
       </p>
     </td>
 
@@ -363,24 +290,24 @@ alt="장면1" style="width: 100%; height: 300px; object-fit: cover; display: blo
 
       
       
-        벨기에의 예술가인 빔 델보예(Wim Delvoye)가 2008년에 스위스인 팀 스타이너(Tim Steiner)의 등에
-         타투를 새기는 방법으로 자신의 등을 살아있는 미술품으로 계약했다는 것은 사실이며, 
-         이 실화가 이 작품의 모티프가 되었다. 빔 델보예는 여러 논란을 일으킨 예술가로, 
+         빔 델보예는 여러 논란을 일으킨 예술가로, 
          그 논쟁의 시작은 살아있는 돼지의 피부에 문신을 새긴 작업에서 비롯되었다. 
          이후 그는 이를 넘어 살아있는 사람의 등을 캔버스로 활용하는 작업을 했다.  
          
        
-          <img src="skin-03.jpg"
-          alt="장면2" style="width: 100%; height: 300px; object-fit: cover; display: block; margin-bottom: 10px;">
-          <br>영화는 실화를 그대로 재현하지는 않았다. 현실에서 그의 살아있는 작품은 스위스인이지만 영화에서는 
+          
+          영화는 실화를 그대로 재현하지는 않았다. 현실에서 그의 살아있는 작품은 스위스인이지만 영화에서는 
           주인공 샘을 시리아 난민으로 설정하여 관람객이 더 윤리적으로 깊이 생각해보게 장치했다.
           영화에서 샘은 벨기에에 갈수 있다는 유혹에 이끌려 계약을 맺지만, 
           그 계약이 초래할 상황에 대해서 깊이 생각해 보지 않았다. 샘은 단순히 등을 내어주는 것으로 생각했지만,
            전시회에서 사람들에게 등을 보이며 앉아 있어야 했고, 자신의 자유의지에 여러 제한을 받게 된다. 
           
-           <br>
-    <!-- 세 번째 이미지와 설명 (동일 콘텐츠라면 생략 가능) -->
-    <br>더군다나 이 작품(샘 자신)은 다른 수집가에게 팔리기도 했다.  
+          
+    
+    더군다나 이 작품(샘 자신)은 다른 수집가에게 팔리기도 했다. 
+          <img src="skin-03.jpg"
+          alt="장면2" style="width: 100%; height: 280px; object-fit: cover; display: block; margin-top: 25px; margin-bottom: 25px;">
+          
     빔 델보예는 이 내용을 영화화하는 것에 동의했으며, 영화에 카메오 출연하기도 했다. 
     
     샘의 등에 어느 나라든 입국할 수 있는 비자(사증)를 문신으로 새긴 제프리는 난민 문제를 폭로하며 예술의 위대함을 논한다. 
@@ -388,17 +315,20 @@ alt="장면1" style="width: 100%; height: 300px; object-fit: cover; display: blo
     돈 많고 교양이 넘치는 부자들이 예술품이 돼서야 자유롭게 국경을 넘나들게 된 샘을 보기 위해 줄을 선다.     
     인권단체들은 난민을 착취하는 예술이라며 반대 시위를 벌이지만, 
     샘은 특급 호텔에서 캐비어를 먹으며 호화로운 생활을 기꺼워한다. 
-    <br>
+
+    <br><br>
+
+    그러나 이런 만족과 무관하게 그의 등은 경매에 내걸리고 사물로 관리된 샘은 예술품에 딸린 부속품에 불과하다. 
+          옛 연인과 함께 지낼 수도, 가족을 만날 수도 없던 그는 자신이 내준 것이 등짝만이 아니라는 사실을 깨닫게 된다. 
     
     <td style="width: 30%; vertical-align: top; text-align: left;">
       
       <img src="skin-02.jpg"
-        alt="장면2" style="width: 100%; height: 300px; object-fit: cover; display: block; margin-bottom: 10px;">
+        alt="장면2" style="width: 100%; height: 300px; object-fit: cover; display: block; margin-top: 7px; margin-bottom: 25px;">
 
      
        
-          그러나 이런 만족과 무관하게 그의 등은 경매에 내걸리고 사물로 관리된 샘은 예술품에 딸린 부속품에 불과하다. 
-          옛 연인과 함께 지낼 수도, 가족을 만날 수도 없던 그는 자신이 내준 것이 등짝만이 아니라는 사실을 깨닫게 된다. 
+          
           영화는 창틀 속 샘의 모습, 자신의 등을 액자에 비춰보는 장면 등을 통해 
           난민이라는 ‘프레임’에 갇혀 빠져나오지 못하는 샘의 처지를 은유한다. 그는 프레임을 벗어날 수 있을까.<br>
         </p>
@@ -412,7 +342,7 @@ alt="장면1" style="width: 100%; height: 300px; object-fit: cover; display: blo
          '피부를 판 남자'가 도려내 전시한 것은 존엄성을 잃은 샘의 등이 아닌
           자본주의 사회에 위치한 사각지대의 민낯 그 자체이지 않았을까.
 
-          결말부에 이르러 지나치게 교훈적인 이야기로 마무리 되는 것은 아쉽다. <br>
+          결말부에 이르러 지나치게 교훈적인 이야기로 마무리 되는 것은 아쉽다. <br><br>
           영화 초반 샘에게 마법의 양탄자를 선물하는 지니가 될 수도, 영혼을 빼앗아가는 악마 
           메피스토펠레스가 될 수도 있었던 제프리는 마지막 장면에서 급히 지니로 선회한다.
            기묘한 계약을 통해 샘에게 자유를 주고, 또 앗아갔던 그의 모습이 다양한 해석을 남기던 것을 떠올려 보면, 
@@ -422,12 +352,12 @@ alt="장면1" style="width: 100%; height: 300px; object-fit: cover; display: blo
       
       </td>
       
-          <br>
+          
       </p>
     </td>
   </tr>
 </table>
-
+</div>
 
 
   
