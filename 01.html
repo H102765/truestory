@@ -99,13 +99,24 @@
 
 
 
-.content {
-    line-height: 1.8;
-    margin-bottom: 15px;
-    max-width: 100%;
-  }
+    .typewriter {
+  overflow: hidden; /* 글자 잘림 */
+  border-right: .15em solid white; /* 커서 효과 */
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .05em;
+  animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+}
 
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
 
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
 
 
 
@@ -250,7 +261,7 @@
     <td style="width: 30%; vertical-align: top;">
       <img src="slave-02.jpg"
       alt="장면1" style="width: 100%; height: 290px; object-fit: cover; display: block; margin-top: 5px; margin-bottom: 20px;">
-     <p style="text-align: center; font-weight: bold;">“며칠 전까지만 해도 가족과 있었는데..<br>그게 모두다.. 사라졌다구요..”</p><hr>
+     <p class="typewriter" style="text-align: center; font-weight: bold;">“며칠 전까지만 해도 가족과 있었는데..<br>그게 모두다.. 사라졌다구요..”</p><hr>
       <p style="text-align: left;">
         1840년대 미국에서는 노예 수입이 금지되자 흑인 납치 사건이 만연하게 된다. 미국내 자유주(州)의 흑인을 납치해 노예주(州)로 팔아 넘기는 것. 실제로 미국에서는 노예해방령에 의해 노예제도가 없어진 후에도 흑인들을 납치하여 인신매매하는 일들이 있었다. 그 예가 솔로몬 노섭과 농학자 조지 워싱턴 카버의 어머니, 메리이다.
         1841년 뉴욕. 아내 그리고 두 명의 아이와 함께 자유로운 삶을 누리던 음악가 솔로몬 노섭(치웨텔 에지오포)은 어느날 갑자기 납치되어 노예로 팔려간다.<br> <br> 그가 도착한 곳은 노예주 중에서도 악명 높은 루이지애나. 신분을 증명할 방법이 없는 그에게 노예 신분과 ‘플랫’이라는 새 이름이 주어지고, 12년의 시간 동안 두 명의 주인 윌리엄 포드(베네딕트 컴버배치), 에드윈 엡스(마이클 패스벤더)를 만나게 된다.
@@ -273,7 +284,7 @@ alt="장면1" style="width: 100%; height: 275px; object-fit: cover; display: blo
             <hr>
         
          
-           <p style="text-align: center; font-weight: bold; margin-bottom: 18px;" > “정말에 빠져있지 않을거야..<br>자유의 기회가 올 때까지 버틸거라구.”<br></p>
+           <p class="typewriter" style="text-align: center; font-weight: bold; margin-bottom: 18px;" > “정말에 빠져있지 않을거야..<br>자유의 기회가 올 때까지 버틸거라구.”<br></p>
 
           <img src="slave-03.jpg"
           alt="장면2" style="width: 100%; height: 260px; object-fit: cover; display: block; margin-bottom: 25px;">
@@ -303,7 +314,7 @@ alt="장면1" style="width: 100%; height: 275px; object-fit: cover; display: blo
           또한 농장주가 고용한 경비병들이 도로를 순찰하고 있었으며 당시 누구나 노예에게 여행 증명서를 요청할 수 있고, 
           증명서가 없으면 당국에 넘길 수 있는 등 그가 탈출하지 못한 이유에 대해서는 언급하지 않았다.</p> 
           
-          <hr> <p style="text-align: center; font-weight: bold;">“This film is based on a true story.”
+          <hr> <p class="typewriter" style="text-align: center; font-weight: bold;">“This film is based on a true story.”
 
             </p><hr>
           
