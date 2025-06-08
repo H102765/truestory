@@ -126,6 +126,26 @@
   }
 
 
+  .fade-in-text {
+  animation: fadeIn 2s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+
+
+  .float-text {
+  display: inline-block;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
 
   .footer {
  
@@ -262,7 +282,7 @@
     <td style="width: 30%; vertical-align: top;">
       <img src="Terminal-01.jpg"
       alt="장면1" style="width: 100%; height: 300px; object-fit: cover; display: block; margin-top: 6px; margin-bottom: 10px;">
-      <p style="text-align: center; font-weight: bold;">“쿠데타에 휩싸인 고국.”</p><hr>
+      <p class="fade-in-text" style="text-align: center; font-weight: bold;">“쿠데타에 휩싸인 고국.”</p><hr>
       <p style="text-align: left;">
         1988년부터 2006년까지 프랑스 파리 샤를 드 골 국제공항에서
 무려 18년 동안 머물렀던 이란인 메르한 카리미 나세리(Mehran Karimi Nasseri, 1945~2022)의 실화에서
@@ -290,7 +310,7 @@ alt="장면1" style="width: 100%; height: 280px; object-fit: cover; display: blo
           터미널 내 빨간 플라스틱 벤치에서 잠을 잤고, 공항 직원들의 도움으로 직원 시설에서 샤워를 했다. 
           나세리는 일기를 쓰거나 공항에 비치된 잡지를 읽고, 지나가는 여행객을 관찰하며 시간을 보냈다고 한다.
           
-          <hr> <p style="text-align: center; font-weight: bold;" >“누구나 힘겨운 전투를 한다.”</p>
+          <hr> <p class="fade-in-text" style="text-align:center; font-weight: bold;" >“누구나 힘겨운 전투를 한다.”</p>
           <img src="Terminal-02.jpg"
           alt="장면2" style="width: 100%; height: 300px; object-fit: cover; display: block; margin-bottom: 18px;">
           그는 1999년 프랑스로부터 난민 지위를 인정받은 뒤에도 공항에 계속 머물렀다. 
@@ -306,7 +326,7 @@ alt="장면1" style="width: 100%; height: 280px; object-fit: cover; display: blo
      사인은 심장마비였다. 
     사망 당시 그의 수중엔 단지 현금 수천 유로(수백만원)가 있었다. 18년동안 살던 공항으로 돌아와서 숨진 것이다. 
     <br><hr>
-    <p style="text-align: center; font-weight: bold;" >‘인생에는 한 가지 확실한 게 있다.<br> 
+    <p class="float-text" style="text-align: center; font-weight: bold;" >‘인생에는 한 가지 확실한 게 있다.<br> 
       그것은 우리의 인생이 불확실성으로 가득하다는 것이다.<br> (One thing is certain, life is filled with uncertainty).’ </p>
       <hr>
       나세리의 기구함은 이런 메시지에 매우 걸맞으며, 
