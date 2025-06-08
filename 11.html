@@ -93,7 +93,14 @@
   }
 
 
+  .fade-in-text {
+  animation: fadeIn 2s ease-in-out forwards;
+  opacity: 0;
+}
 
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
 
 
 
@@ -270,7 +277,7 @@
     <td style="width: 30%; vertical-align: top; padding: 0;" >
       <img src="skin-01.jpg"
       alt="장면1" style="width: 100%; height: 260px; object-fit: cover; display: block; margin-top: 7px; margin-bottom: 10px;">
-      <p style="text-align: center; font-weight: bold;">“예술품보다 못한 난민의 처지.”</p><hr>
+      <p class="fade-in-text" style="text-align: center; font-weight: bold">“예술품보다 못한 난민의 처지.”</p><hr>
       <p style="text-align: left;">
         2011년, 시리아 청년 샘(야흐야 마하이니)은 억압을 피해 레바논으로 도망친다. 
         궁핍한 하루하루를 살아가던 중, 한 갤러리에 음식을 훔쳐 먹으러 들어간 샘은 그곳에서 
