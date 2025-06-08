@@ -89,9 +89,12 @@
     max-width: 100%;
   }
 
-
+  .wrapper {
+  display: flex;
+  justify-content: center;
+}
   .shake-text {
-    text-align: center;
+    
     display: inline-block;
   animation: shake 0.9s infinite alternate;
   
@@ -99,7 +102,7 @@
 
 @keyframes shake {
   0% { transform: translateX(-8px); }
-  100% { transform: translateX(8px); }
+  100% { transform: translateX(30px); }
 }
 
 
