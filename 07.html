@@ -88,7 +88,24 @@
 
 
 
+.typewriter {
+  overflow: hidden; /* 글자 잘림 */
+  border-right: .15em solid white; /* 커서 효과 */
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .05em;
+  animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+}
 
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
 
 
 
@@ -332,14 +349,14 @@ alt="장면1" style="width: 100%; height: 280px; object-fit: cover; display: blo
       나세리의 기구함은 이런 메시지에 매우 걸맞으며, 
         그의 인생역정은 심각한 드라마의 소재로 제격이다. 
         관객한테 더 통렬한 페이소스를 기대할수록 코미디의 파급력은 커지기에. 
-        조금만 한 눈을 팔아도 길을 잃은 것 같은 불안감을 영화 한 편으로 조금은 녹여준다.
+        조금만 한 눈을 팔아도 길
     <td style="width: 30%; vertical-align: top; text-align: left;">
       <img src="Terminal-04.jpg"
       alt="장면2" style="width: 100%; height: 300px; object-fit: cover; display: block; margin-top: 6px; margin-bottom: 10px;">
       <p>
         
     
-        
+        을 잃은 것 같은 불안감을 영화 한 편으로 조금은 녹여준다.
         대한민국의 평론가들은 대체로 감독 스티븐 스필버그의 연출과 톰 행크스의 연기에는 호평을 내렸으나, 
         영화가 현실 정치 문제를 건드리는 방식에 반감을 드러냈다. 
         허문영 평론가는 영화를 합리적인 미국 체계에 '인민주의적 휴머니즘'을 도입하려는 시도로 도식화하면서, 
@@ -370,7 +387,7 @@ alt="장면1" style="width: 100%; height: 280px; object-fit: cover; display: blo
   </tr>
 </table>
 
-<br> <br>
+<br> 
 
     <!-- 평점 -->
     <div class="ratings">
