@@ -1,58 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 20px;
-      background-color: #f4f4f4;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: honeydew;
     }
 
-    h1 {
+    .image-container {
       text-align: center;
-      margin-bottom: 40px;
     }
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .gallery img {
-      width: 100%;
+    .main-image {
+      width: 80vw;
+      max-width: 1000px;
       height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s;
+      cursor: pointer;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s ease;
     }
 
-    .gallery img:hover {
-      transform: scale(1.05);
+    .main-image:hover {
+      transform: scale(1.02);
+    }
+
+    .download-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background: #66686a;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    /* Fullscreen viewer */
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .overlay img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 12px;
+    }
+
+    .overlay:active {
+      display: none;
     }
   </style>
 </head>
 <body>
 
-  <h1>Image Gallery</h1>
-  <div class="gallery">
-    <img src="2025-portfolio-1.jpg" alt="Image 1">
-    <img src="2025-portfolio-2.jpg" alt="Image 2">
-    <img src="2025-portfolio-3.jpg" alt="Image 3">
-    <img src="2025-portfolio-4.jpg" alt="Image 4">
-    <img src="2025-portfolio-5.jpg" alt="Image 5">
-    <img src="2025-portfolio-6.jpg" alt="Image 6">
-    <img src="2025-portfolio-7.jpg" alt="Image 7">
-    <img src="2025-portfolio-8.jpg" alt="Image 8">
-    <img src="2025-portfolio-9.jpg" alt="Image 9">
-    <img src="2025-portfolio-10.jpg" alt="Image 10">
+  <div class="image-container">
+    <img
+      src="2025-portfolio-1.jpg"
+      alt="Portfolio Image"
+      class="main-image"
+      id="mainImage"
+    />
+    <br/>
+    <a href="2025-portfolio-1.jpg" download>
+      <button class="download-btn">Download Image</button>
+    </a>
   </div>
+
+  <!-- Fullscreen overlay -->
+  <div class="overlay" id="overlay">
+    <img src="2025-portfolio-1.jpg" alt="Zoomed Image" />
+  </div>
+
+
+  <div class="image-container">
+    <img
+      src="2025-portfolio-2.jpg"
+      alt="Portfolio Image"
+      class="main-image"
+      id="mainImage"
+    />
+    <br/>
+    <a href="2025-portfolio-2.jpg" download>
+      <button class="download-btn">Download Image</button>
+    </a>
+  </div>
+
+  <div class="image-container">
+    <img
+      src="2025-portfolio-3.jpg"
+      alt="Portfolio Image"
+      class="main-image"
+      id="mainImage"
+    />
+    <br/>
+    <a href="2025-portfolio-3.jpg" download>
+      <button class="download-btn">Download Image</button>
+    </a>
+  </div>
+
+  <!-- Fullscreen overlay -->
+  <div class="overlay" id="overlay">
+    <img src="2025-portfolio-4.jpg" alt="Zoomed Image" />
+  </div>
+
+  <div class="image-container">
+    <img
+      src="2025-portfolio-4.jpg"
+      alt="Portfolio Image"
+      class="main-image"
+      id="mainImage"
+    />
+    <br/>
+    <a href="2025-portfolio-4.jpg" download>
+      <button class="download-btn">Download Image</button>
+    </a>
+  </div>
+
+  <!-- Fullscreen overlay -->
+  <div class="overlay" id="overlay">
+    <img src="2025-portfolio-5.jpg" alt="Zoomed Image" />
+  </div>
+
+  <div class="image-container">
+    <img
+      src="2025-portfolio-5.jpg"
+      alt="Portfolio Image"
+      class="main-image"
+      id="mainImage"
+    />
+    <br/>
+    <a href="2025-portfolio-5.jpg" download>
+      <button class="download-btn">Download Image</button>
+    </a>
+  </div>
+
+    <!-- Fullscreen overlay -->
+    <div class="overlay" id="overlay">
+        <img src="2025-portfolio-6.jpg" alt="Zoomed Image" />
+      </div>
+    
+      <div class="image-container">
+        <img
+          src="2025-portfolio-6.jpg"
+          alt="Portfolio Image"
+          class="main-image"
+          id="mainImage"
+        />
+        <br/>
+        <a href="2025-portfolio-6.jpg" download>
+          <button class="download-btn">Download Image</button>
+        </a>
+      </div>
+
+  <!-- Fullscreen overlay -->
+  <div class="overlay" id="overlay">
+    <img src="2025-portfolio-7.jpg" alt="Zoomed Image" />
+  </div>
+
+  <div class="image-container">
+    <img
+      src="2025-portfolio-7.jpg"
+      alt="Portfolio Image"
+      class="main-image"
+      id="mainImage"
+    />
+    <br/>
+    <a href="2025-portfolio-7.jpg" download>
+      <button class="download-btn">Download Image</button>
+    </a>
+  </div>
+
+
+  <!-- Fullscreen overlay -->
+  <div class="overlay" id="overlay">
+    <img src="2025-portfolio-8.jpg" alt="Zoomed Image" />
+  </div>
+
+  <div class="image-container">
+    <img
+      src="2025-portfolio-8.jpg"
+      alt="Portfolio Image"
+      class="main-image"
+      id="mainImage"
+    />
+    <br/>
+    <a href="2025-portfolio-8.jpg" download>
+      <button class="download-btn">Download Image</button>
+    </a>
+  </div>
+
+
+  <!-- Fullscreen overlay -->
+  <div class="overlay" id="overlay">
+    <img src="2025-portfolio-9.jpg" alt="Zoomed Image" />
+  </div>
+
+  <div class="image-container">
+    <img
+      src="2025-portfolio-9.jpg"
+      alt="Portfolio Image"
+      class="main-image"
+      id="mainImage"
+    />
+    <br/>
+    <a href="2025-portfolio-9.jpg" download>
+      <button class="download-btn">Download Image</button>
+    </a>
+  </div>
+
+
+  <!-- Fullscreen overlay -->
+  <div class="overlay" id="overlay">
+    <img src="2025-portfolio-10.jpg" alt="Zoomed Image" />
+  </div>
+
+  <div class="image-container">
+    <img
+      src="2025-portfolio-10.jpg"
+      alt="Portfolio Image"
+      class="main-image"
+      id="mainImage"
+    />
+    <br/>
+    <a href="2025-portfolio-10.jpg" download>
+      <button class="download-btn">Download Image</button>
+    </a>
+  </div>
+
+
+  <script>
+    const mainImage = document.getElementById('mainImage');
+    const overlay = document.getElementById('overlay');
+
+    mainImage.addEventListener('click', () => {
+      overlay.style.display = 'flex';
+    });
+
+    overlay.addEventListener('click', () => {
+      overlay.style.display = 'none';
+    });
+  </script>
 
 </body>
 </html>
